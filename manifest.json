@@ -1,0 +1,130 @@
+{
+    "name": "Minhas Tarefas",
+    "short_name": "Tarefas",
+    "description": "Lista de tarefas simples, offline e instalável com design moderno",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#7c3aed",
+    "background_color": "#f9fafb",
+    "orientation": "portrait",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/icon-72.png",
+        "sizes": "72x72",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-96.png",
+        "sizes": "96x96",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-152.png",
+        "sizes": "152x152",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Nova Tarefa",
+        "short_name": "Nova",
+        "description": "Adicionar uma nova tarefa rapidamente",
+        "url": "/?action=new",
+        "icons": [
+          {
+            "src": "/icon-96.png",
+            "sizes": "96x96"
+          }
+        ]
+      },
+      {
+        "name": "Tarefas Pendentes",
+        "short_name": "Pendentes",
+        "description": "Ver apenas tarefas não concluídas",
+        "url": "/?filter=pending",
+        "icons": [
+          {
+            "src": "/icon-96.png",
+            "sizes": "96x96"
+          }
+        ]
+      }
+    ],
+    "categories": ["productivity", "utilities"],
+    "screenshots": [
+      {
+        "src": "/screenshot-mobile.png",
+        "sizes": "1080x1920",
+        "type": "image/png",
+        "form_factor": "narrow",
+        "label": "Tela principal do aplicativo"
+      },
+      {
+        "src": "/screenshot-desktop.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "Visualização no desktop"
+      }
+    ],
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "lang": "pt-BR",
+    "dir": "ltr",
+    "iarc_rating_id": "",
+    "display_override": ["standalone", "minimal-ui"],
+    "edge_side_panel": {
+      "preferred_width": 400
+    },
+    "share_target": {
+      "action": "/",
+      "method": "GET",
+      "enctype": "application/x-www-form-urlencoded",
+      "params": {
+        "title": "title",
+        "text": "text",
+        "url": "url"
+      }
+    },
+    "launch_handler": {
+      "client_mode": ["focus-existing", "auto"]
+    },
+    "handle_links": "preferred",
+    "note_taking": {
+      "new_note_url": "/?action=new"
+    }
+  }
