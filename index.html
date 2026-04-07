@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✨ Minhas Tarefas • PWA ✨</title>
+  
+  <meta name="theme-color" content="#7c3aed"/>
+  <meta name="description" content="Lista de tarefas simples, offline e instalável com design moderno"/>
+  
+  <link rel="manifest" href="/manifest.json"/>
+  <link rel="apple-touch-icon" href="icon-192.png"/>
+  
+  <link rel="stylesheet" href="style.css"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="gradient-bg"></div>
+  
+  <header>
+    <div class="logo">
+      <i class="fa-solid fa-check-double"></i>
+      <h1>Minhas Tarefas</h1>
+    </div>
+    <div class="header-buttons">
+      <button id="toggle-theme" title="Alternar tema">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button id="clear-all" title="Limpar todas as tarefas" class="clear-btn">
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="welcome-message">
+      <i class="fa-regular fa-face-smile"></i>
+      <span>Organize seu dia com estilo!</span>
+    </div>
+
+    <form id="task-form">
+      <div class="input-wrapper">
+        <i class="fa-regular fa-keyboard"></i>
+        <input 
+          type="text" 
+          id="task-input" 
+          placeholder="O que você precisa fazer hoje?" 
+          autocomplete="off"
+          required
+        />
+      </div>
+      <button type="submit">
+        <i class="fa-solid fa-plus"></i> Adicionar
+      </button>
+    </form>
+
+    <div class="tasks-header">
+      <h2><i class="fa-regular fa-list-check"></i> Suas Tarefas</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="pending">Pendentes</button>
+        <button class="filter-btn" data-filter="completed">Concluídas</button>
+      </div>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <div id="stats">
+      <div class="stat-card">
+        <i class="fa-solid fa-chart-simple"></i>
+        <span id="total">0 tarefas</span>
+      </div>
+      <div class="stat-card">
+        <i class="fa-regular fa-clock"></i>
+        <span id="pending">0 pendentes</span>
+      </div>
+      <div class="stat-card">
+        <i class="fa-regular fa-circle-check"></i>
+        <span id="completed">0 concluídas</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
